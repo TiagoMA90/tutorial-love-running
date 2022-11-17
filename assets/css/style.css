@@ -126,6 +126,13 @@ h1, h2  {
     background-color: green;
 }
 
+#times > div    {
+    width: 100%;
+    clear: both;
+    height: 150px;
+    padding: 0;
+}
+
 hr  {
     border-top: 1px solid #3a3a3a;
     width: 100%;
@@ -267,7 +274,7 @@ height: 150px;
         }
 }
 
-/* For medium screens sizes from 950px wide and down */
+/* For medium screens sizes from 950px wide and down -Tablet and Mobile view-  */
 
 @media screen and (max-width: 950px)    {
     #menu   {
@@ -299,7 +306,14 @@ height: 150px;
         text-align: center;
         padding: 0 20px;
     }
+
+    #photos {
+        column-count: 3;
+    }
 }
 
-
-/*  */
+@media screen and (max-width: 800px)    {
+    #photos {
+        column-count: 2;
+    }
+}
